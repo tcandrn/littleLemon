@@ -25,7 +25,7 @@ body {
     flex-direction: row;
     align-items: center;
     list-style: none;
-    gap: 90px;
+    gap: 20px;
     justify-content: center;
 }
 .nav-list a {
@@ -44,8 +44,8 @@ body {
     background-color: rgba(0, 0, 0, 0.658);
     border: none 1px black;
     border-radius: 20px;
-    padding-top: 0.1;    /* reduced from 0.2em */
-    padding-bottom: 0.1; /* reduced from 0.2em */
+    padding-top: 0.1;    
+    padding-bottom: 0.1; 
     margin-left: 40px;
     margin-right: 40px;
     
@@ -57,7 +57,7 @@ body {
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    overflow: hidden; /* ensures the pseudo-element stays inside */
+    overflow: hidden; 
 }
 
 .main-content::before {
@@ -67,7 +67,7 @@ body {
     background-image: url('assets/back-banner.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.3; /* adjust this value for desired opacity */
+    opacity: 0.3; 
     z-index: 0;
     border-radius: 10px;
 }
@@ -102,8 +102,8 @@ body {
     margin-top: 0;
 }
 .content-container article {
-    width: 350px; /* or max-width: 350px; */
-    flex: 0 1 350px; /* prevents stretching, allows wrapping */
+    width: 350px; 
+    flex: 0 1 350px; 
     padding: 20px;
     background-color: rgba(250, 255, 206, 0.76);
     border-radius: 10px;
