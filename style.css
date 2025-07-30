@@ -1,10 +1,8 @@
 body {
-    background-color:rgb(253, 255, 235);
-    
+    background-color: rgb(253, 255, 235);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
 }
 
 .header-container {
@@ -12,7 +10,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    
 }
 
 .header-container img {
@@ -22,52 +19,49 @@ body {
 
 .nav-list {
     display: flex;
-    flex-direction: row;
     align-items: center;
     list-style: none;
-    gap: 20px;
+    gap: 25px;
     justify-content: center;
+    padding: 10px;
+    margin: 0;
 }
+
 .nav-list a {
-    display: inline;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-weight: bold;
     font-size: x-large;
-    font-family:'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 }
+
 .nav-list a:hover {
-    color: rgb(0, 0, 0);
-    
+    color: #000;
 }
+
 .nav-bar {
-    background-color: rgba(0, 0, 0, 0.658);
-    border: none 1px black;
+    background-color: rgba(0, 0, 0, 0.66);
     border-radius: 20px;
-    padding-top: 0.1;    
-    padding-bottom: 0.1; 
-    margin-left: 40px;
-    margin-right: 40px;
-    
+    margin: 0 40px;
 }
+
 .main-content {
     position: relative;
     padding: 20px;
-    margin: 40px;
-    margin-top: 20px;
+    margin: 20px 40px 40px 40px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .main-content::before {
     content: "";
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('https://raw.githubusercontent.com/tcandrn/littleLemon/refs/heads/main/assets/back-banner.webp?token=GHSAT0AAAAAADH2ZGMMWHETIXT7EBQNFXL62EKTC7A');
+    inset: 0;
+    background-image: url('https://i.postimg.cc/zfz8LPxk/back-banner.webp');
     background-size: cover;
     background-position: center;
-    opacity: 0.3; 
+    opacity: 0.3;
     z-index: 0;
     border-radius: 10px;
 }
@@ -77,47 +71,53 @@ body {
     z-index: 1;
 }
 
-.main-content h1 {
+.main-content h1,
+.main-content p,
+.footer-copyright {
     font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.main-content h1 {
     font-weight: 700;
-    color: rgb(0, 0, 0);
+    color: #000;
     font-size: 2em;
 }
+
 .main-content p {
     font-weight: bold;
-    font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .content-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: flex-start;
-    height: auto;
     gap: 40px;
     margin: 40px;
-    
-}.content-container article h1{
-    margin-top: 0;
 }
+
 .content-container article {
-    width: 350px; 
-    flex: 0 1 350px; 
+    width: 350px;
+    flex: 0 1 350px;
     padding: 20px;
     background-color: rgba(250, 255, 206, 0.76);
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
+
 .content-container article:hover {
     transform: scale(1.05);
-    transition: 0.3s ease-in-out;
+}
+
+.content-container article h1 {
+    margin-top: 0;
 }
 
 #copyright-message {
     text-align: end;
     font-size: 0.8em;
-    color: rgb(0, 0, 0);
+    color: #000;
     margin-top: 20px;
 }
 
@@ -137,10 +137,9 @@ body {
 
 .footer-right {
     display: flex;
-    flex-direction: column; 
-    align-items: flex-end;   
+    flex-direction: column;
+    align-items: flex-end;
     width: 100%;
-    justify-content: flex-end;
 }
 
 .footer-line {
@@ -151,7 +150,6 @@ body {
 }
 
 .footer-copyright {
-    font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1em;
     color: #2d2d2d;
     font-weight: bold;
