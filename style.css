@@ -102,11 +102,12 @@ body {
     margin-top: 0;
 }
 .content-container article {
+    width: 350px; /* or max-width: 350px; */
+    flex: 0 1 350px; /* prevents stretching, allows wrapping */
     padding: 20px;
     background-color: rgba(250, 255, 206, 0.76);
     border-radius: 10px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
-    
 }
 .content-container article:hover {
     transform: scale(1.05);
