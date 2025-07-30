@@ -64,7 +64,7 @@ body {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background-image: url('assets/back-banner.jpg');
+    background-image: url('https://raw.githubusercontent.com/tcandrn/littleLemon/refs/heads/main/assets/back-banner.webp?token=GHSAT0AAAAAADH2ZGMMWHETIXT7EBQNFXL62EKTC7A');
     background-size: cover;
     background-position: center;
     opacity: 0.3; 
@@ -112,4 +112,47 @@ body {
 .content-container article:hover {
     transform: scale(1.05);
     transition: 0.3s ease-in-out;
+}
+
+#copyright-message {
+    text-align: end;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f3f5f3;
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.footer-left img {
+    display: block;
+    height: 50px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: flex-end;   /* align to the right */
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer-line {
+    border: none;
+    border-top: 2px solid #6b6b6b;
+    width: 300px;
+    margin: 10px 0;
+}
+
+.footer-copyright {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1em;
+    color: #2d2d2d;
+    font-weight: bold;
 }
